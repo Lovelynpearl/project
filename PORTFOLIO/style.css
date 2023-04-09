@@ -1,0 +1,140 @@
+body {
+    background-color: #4070f4;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display:flexbox;
+    justify-content:left;
+    align-items:self-end;
+    min-height: 50px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+    
+}
+body.dark {
+    background-color: #18191a;
+}
+
+p {
+    color:blueviolet;
+    font-size: xx-large;
+    font-style: oblique;
+}
+* {
+    color: black;
+    
+    
+}
+
+img {
+    height: 150px;
+    width:110px;
+    padding: auto;
+    border-radius: 20px;
+    border-style: double;
+    border-color:black;
+}
+
+.body button {
+   font-size: 40px; 
+   background-color:grey;
+   color: white;
+   padding: 10px 20px;
+   border-radius: 50px;
+box-sizing:content-box;
+box-shadow: 0 0 2px 4px black;
+position: relative;
+
+}
+
+.footer{
+    font-size: small;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 50px;
+    
+}
+.footer button {
+    background-color:aquamarine;
+    
+    color: blue;
+    font-weight: 500;
+    border: 0;
+    font-size:15px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-sizing:border-box;
+    box-shadow: 0 0 2px 3px gray;
+}
+
+ .div p {
+    position:relative;
+    align-items: baseline;
+
+    margin: 20px;
+    color: blue;
+    font-weight: 700;
+    font-size:150px ;
+ }
+    
+.body h3 {
+font-size: small;
+font-style: italic;
+color: blueviolet;
+}
+
+
+
+.toggle {
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0.1);
+    cursor: pointer;
+}
+
+.toggle::before {
+content: "";
+position: absolute;
+height: 40px;
+width: 40px;
+background: black;
+border-radius: 50%;
+top: 15%;
+left: 14px;
+transform: translate(-25%);
+}
+.toggle.active::before {
+    background-color: #18191a;
+    left: calc(100% - 110% - 14px);
+
+}
+
+* {
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+    
+}
+
+@viewpoint {
+width: device-witdth;
+zoom: 1.0;
+}
+
+@media screen and (max-witdth:320px) {
+
+}
+
+
+
+
+@media screen and (min-width:320px) and (max-width:640px) {
+    /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+  }
+
+
+
+
+
+

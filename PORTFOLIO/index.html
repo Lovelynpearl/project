@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PORTFOLIO</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)"  href="style.css"/>
+
+    </head>
+    <body>
+        <div class="toggle">
+            <div class="dark mode">
+               
+            </div>
+        </div>
+
+        <div class="header">
+        <h1>
+            <img src="C:\Users\HP\Downloads\Love.jpeg" alt="profile picture">
+        </h1>
+        <p><span>Hi,</span> I'm Lovelyn Okoro,<span>a Front-end Software Developer</span></p>
+        </div>
+
+        <div class="body">
+       <a class="" href="https://drive.google.com/file/d/1mY3rlTOIab9GQLa7_5Ht3cEszwKPEoCc/view?usp=drivesdk" title="CV" download><button>CV</button></a>
+        
+        
+
+
+
+        <div class="footer">
+
+            
+              <a class="" href="https://web.facebook.com/Chinylove"><button>Facebook</button></a>
+              <a class="https://icons8.com/icon/Xy10Jcu1L2Su/instagram-new" href="htt<ps://www.instagram.com/lovelyn_pearly/"><button>Instagram</button></a>
+              <a href="https://github.com/Lovelynpearl"><button>Github</button></a>
+              <a href="https://www.linkedin.com/in/lovelynpearl/"><button>linkedin</button></a>
+            
+        </div>
+
+        <h2>CONTACT</h2>
+        <h3>lovelynpearl@gmail.com</h3>
+        <h3>09075819640</h3>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script>
+          const body = document.querySelector("body"),
+toggle = document.querySelector(".toggle");
+
+let getMode = localStorage.getItem("mode");
+if(getMode && getMode === "dark") {
+    body.classList.add("dark");
+    toggle.classList.add("active");
+}
+
+
+toggle.addEventListener("click", () => {
+    body.classList.toggle("dark"); 
+});
+if(!body.classList.contains("dark")){
+    returnlocalStorage.seitem("mode", "light");
+}
+localStorage.setItem("mode", "dark");
+
+
+toggle.addEventListener("click", () => toggle.classList.toggle("active"));  
+        </script>
+    </body>
+</html>
